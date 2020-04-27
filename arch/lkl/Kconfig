@@ -36,6 +36,27 @@ config LKL
        select ARCH_NO_COHERENT_DMA_MMAP
        select HAVE_MEMBLOCK
        select NO_BOOTMEM
+       select NETFILTER
+       select IP_NF_IPTABLES
+       select IP_NF_FILTER
+       select NF_TABLES
+       select NF_CONNTRACK
+       select NF_NAT
+       select NF_NAT_NEEDED
+       select NF_NAT_PROTO_DCCP
+       select NF_NAT_PROTO_UDPLITE
+       select NF_NAT_PROTO_SCTP
+       select NF_NAT_REDIRECT
+       select NF_TABLES
+       select NF_DEFRAG_IPV4
+       select NF_CONNTRACK_IPV4
+       select NFT_NFT_NAT
+       select NETFILTER_XTABLES
+       select NF_NAT_IPV4
+       select NF_NAT_MASQUERADE_IPV4
+       select IP_NF_NAT
+       select IP_NF_TARGET_MASQUERADE
+       select NETFILTER_XT_NAT
 
 config OUTPUT_FORMAT
        string "Output format"
